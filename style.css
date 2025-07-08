@@ -85,10 +85,9 @@ body{
     margin: 0 auto;
 }
 
-@media screen and (min-width: 768px){
-    .parametro-coluna__senha{
-        flex-direction: row;
-    }
+.parametro-senha-botoes{
+    display: flex;
+    justify-content: center;
 }
 
 .parametro-senha__botao{
@@ -125,12 +124,10 @@ body{
 }
 
 .fraca{
-    height: 30px;
     width: 25px;
     background-color: #E71B32;
-    position: relative;
-    bottom: 30px;
 }
+
 
 .parametro-senha-textos{
     display: flex;
@@ -138,9 +135,27 @@ body{
 }
 
 .media{
-    height: 30px;
     width: 50%;
     background-color: #FAF408;
+}
+
+.forte{
+    width: 100%;
+    background-color: #32fd32;
+}
+
+.forca{
+    height: 30px;
     position: relative;
     bottom: 30px;
+}
+.parametro-senha-textos{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screem and (min-width: 768px) {
+    .parametro-coluna__senha{
+        flex-direction: row;
+    }
 }
